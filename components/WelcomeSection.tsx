@@ -2,69 +2,21 @@ import React from 'react';
 
 const WelcomeSection: React.FC = () => {
   return (
-    <div style={styles.container}>
-      <div style={styles.textContainer}>
-        <h1 style={styles.heading}>Welcome user!</h1>
-        <p style={styles.description}>
-          At caton, you can book clinic appointments with the best doctors in any location and manage your health records.
+    <div className="flex items-center justify-between bg-[#9DDAB9] p-5 h-[500px]">
+      <div className="flex-1 pr-5">
+        <h1 className="text-4xl font-bold text-black ml-16">Welcome user!</h1>
+        <p className="text-lg italic text-gray-700 mb-5 ml-16">
+          At Caton, you can book clinic appointments with the best doctors in any location and manage your health records.
         </p>
-        <button style={styles.button}>Let's Explore</button>
+        <button className="bg-[#172dd4] text-white text-lg py-2 px-8 rounded-md cursor-pointer ml-16">
+          Let's Explore
+        </button>
       </div>
-      <div style={styles.imageContainer}>
-        <img src="/assets/undraw_medicine.svg" alt="Healthcare illustration" style={styles.image} />
+      <div className="flex-1 flex justify-center">
+        <img src="/assets/undraw_medicine.svg" alt="Healthcare illustration" className="w-full max-w-xs h-auto" />
       </div>
     </div>
   );
-};
-
-const styles: { [key: string]: React.CSSProperties } = {
-  container: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    backgroundColor: '#9DDAB9',
-    padding: '20px',
-    height:'500px'
-  },
-  textContainer: {
-    flex: 1,
-    paddingRight: '20px',
-  },
-  heading: {
-    fontSize: '36px',
-    fontWeight: 'bold',
-    color: '#000',
-    marginLeft:'62px' ,
-  },
-  description: {
-    fontSize: '18px',
-    fontStyle: 'italic',
-    color: '#333',
-    marginBottom: '20px',  
-    paddingLeft:'62px' ,
-
-  },
-  button: {
-    backgroundColor: '#172dd4',
-    color: '#fff',
-    fontSize: '18px',
-    padding: '10px 30px',
-    border: 'none',
-    borderRadius: '5px',
-    cursor: 'pointer',
-    marginLeft: '62px'
-    
-  },
-  imageContainer: {
-    flex: 1,
-    display: 'flex',
-    justifyContent: 'center',
-  },
-  image: {
-    width: '100%',
-    maxWidth: '300px',
-    height: 'auto',
-  },
 };
 
 export default WelcomeSection;

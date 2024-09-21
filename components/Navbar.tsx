@@ -3,49 +3,18 @@ import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   return (
-    <nav style={styles.navbar}>
-      <div style={styles.logoContainer}>
-        <img src="/assets/logo-no-background.png" alt="logo" style={styles.logo} />
+    <nav className="flex justify-between items-center bg-[#9DDAB9] p-2.5 border-b-2 border-[#318baf]">
+      <div className="flex items-center">
+        <img src="/assets/logo-no-background.png" alt="logo" className="w-12 h-12 mx-2.5" />
       </div>
-      <div style={styles.linksContainer}>
-        <Link href="/" style={styles.link}>Home</Link> 
-        <Link href="/services" style={styles.link}>Services</Link> 
-        <Link href="/about" style={styles.link}>About</Link>
-        <Link href="/contact" style={styles.link}>Contact us</Link>
+      <div className="flex gap-16 pr-52">
+        <Link href="/" className="text-lg text-black no-underline">Home</Link>
+        <Link href="/services" className="text-lg text-black no-underline">Services</Link>
+        <Link href="/about" className="text-lg text-black no-underline">About</Link>
+        <Link href="/contact" className="text-lg text-black no-underline">Contact us</Link>
       </div>
     </nav>
   );
-};
-
-const styles = {
-  navbar: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: '#9DDAB9',
-    padding: '10px 20px',
-    borderBottom: '2px solid #318baf',
-  },
-  logoContainer: {
-    display: 'flex',
-    alignItems: 'center',
-  },
-  logo: {
-    width: '50px',
-    height: '50px',
-    marginRight: '10px',
-    marginLeft: '10px'
-  },
-  linksContainer: {
-    display: 'flex',
-    gap: '70px',
-    paddingRight:'200px',
-  },
-  link: {
-    textDecoration: 'none',
-    fontSize: '18px',
-    color: '#000',
-  },
 };
 
 export default Navbar;

@@ -3,95 +3,39 @@ import { FaUserMd } from 'react-icons/fa'; // Using doctor icon from react-icons
 
 const StatisticsSection: React.FC = () => {
   return (
-    <div style={styles.container}>
+    <div className="bg-[#E0F3F8] p-12 flex flex-col items-center">
       {/* Title */}
-      <div style={styles.titleContainer}>
-        <h2 style={styles.title}>
-          <span style={styles.greenText}>Patients</span> Statistics
+      <div className="text-center mb-7">
+        <h2 className="text-2xl font-bold">
+          <span className="text-[#1DBF73]">Patients</span> Statistics
         </h2>
-        <p style={styles.subtitle}>
+        <p className="text-lg text-gray-600">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
         </p>
       </div>
 
       {/* Statistics Cards */}
-      <div style={styles.statsContainer}>
-        <div style={styles.statCard}>
-          <FaUserMd style={styles.icon} />
-          <h3 style={styles.statNumber}>10000+</h3>
-          <p style={styles.statLabel}>Patients Reached</p>
+      <div className="flex gap-5 justify-center">
+        <div className="bg-white p-7 rounded-lg shadow-md text-center w-48 flex flex-col items-center">
+          <FaUserMd className="text-4xl text-[#1DBF73] mb-2.5" />
+          <h3 className="text-2xl font-bold text-black">10000+</h3>
+          <p className="text-lg text-gray-600 mt-2.5">Patients Reached</p>
         </div>
 
-        <div style={styles.statCard}>
-          <FaUserMd style={styles.icon} />
-          <h3 style={styles.statNumber}>500+</h3>
-          <p style={styles.statLabel}>Doctors Connected</p>
+        <div className="bg-white p-7 rounded-lg shadow-md text-center w-48 flex flex-col items-center">
+          <FaUserMd className="text-4xl text-[#1DBF73] mb-2.5" />
+          <h3 className="text-2xl font-bold text-black">500+</h3>
+          <p className="text-lg text-gray-600 mt-2.5">Doctors Connected</p>
         </div>
 
-        <div style={styles.statCard}>
-          <FaUserMd style={styles.icon} />
-          <h3 style={styles.statNumber}>20%+</h3>
-          <p style={styles.statLabel}>Growth Rates</p>
+        <div className="bg-white p-7 rounded-lg shadow-md text-center w-48 flex flex-col items-center">
+          <FaUserMd className="text-4xl text-[#1DBF73] mb-2.5" />
+          <h3 className="text-2xl font-bold text-black">20%+</h3>
+          <p className="text-lg text-gray-600 mt-2.5">Growth Rates</p>
         </div>
       </div>
     </div>
   );
-};
-
-const styles = {
-  container: {
-    backgroundColor: '#E0F3F8',
-    padding: '50px 20px',
-    display: 'flex',
-    flexDirection: 'column' as 'column',
-    alignItems: 'center',
-  },
-  titleContainer: {
-    textAlign: 'center' as 'center',
-    marginBottom: '30px',
-  },
-  title: {
-    fontSize: '28px',
-    fontWeight: 'bold' as 'bold',
-  },
-  greenText: {
-    color: '#1DBF73',
-  },
-  subtitle: {
-    fontSize: '16px',
-    color: '#555',
-  },
-  statsContainer: {
-    display: 'flex',
-    gap: '20px',
-    justifyContent: 'center',
-  },
-  statCard: {
-    backgroundColor: '#fff',
-    padding: '30px',
-    borderRadius: '8px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    textAlign: 'center' as 'center',
-    width: '200px',
-    display: 'flex',
-    flexDirection: 'column' as 'column',
-    alignItems: 'center',
-  },
-  icon: {
-    fontSize: '32px',
-    color: '#1DBF73',
-    marginBottom: '10px',
-  },
-  statNumber: {
-    fontSize: '24px',
-    fontWeight: 'bold' as 'bold',
-    color: '#000',
-  },
-  statLabel: {
-    fontSize: '16px',
-    color: '#555',
-    marginTop: '10px',
-  },
 };
 
 export default StatisticsSection;

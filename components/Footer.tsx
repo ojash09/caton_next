@@ -4,101 +4,54 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   return (
-    <footer style={styles.footer}>
-      <div style={styles.footerContainer}>
-        <div style={styles.footerSection}>
-          <h3 style={styles.title}>About</h3>
-          <p style={styles.text}>
+    <footer className="bg-[#A8D5B3] p-10 flex justify-center">
+      <div className="w-full max-w-screen-xl flex justify-between">
+        <div className="flex-1 mr-5">
+          <h3 className="font-bold mb-2.5">About</h3>
+          <p className="mb-5 text-gray-800">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
           </p>
-          <div style={styles.socialIcons}>
-            <FaFacebookF style={styles.icon} />
-            <FaTwitter style={styles.icon} />
-            <FaInstagram style={styles.icon} />
-            <FaYoutube style={styles.icon} />
+          <div className="flex mt-2.5">
+            <FaFacebookF className="text-2xl text-gray-600 mr-2.5 cursor-pointer" />
+            <FaTwitter className="text-2xl text-gray-600 mr-2.5 cursor-pointer" />
+            <FaInstagram className="text-2xl text-gray-600 mr-2.5 cursor-pointer" />
+            <FaYoutube className="text-2xl text-gray-600 cursor-pointer" />
           </div>
         </div>
 
-        <div style={styles.footerSection}>
-          <h3 style={styles.title}>Quick Links</h3>
-          <ul style={styles.list}>
-            <li><Link href="/symptoms" style={styles.link}>Symptoms</Link></li>
-            <li><Link href="/prevention" style={styles.link}>Prevention</Link></li>
-            <li><Link href="/faqs" style={styles.link}>FAQs</Link></li>
-            <li><Link href="/about-coronavirus" style={styles.link}>About Coronavirus</Link></li>
-            <li><Link href="/contact" style={styles.link}>Contact Us</Link></li>
+        <div className="flex-1 mr-5">
+          <h3 className="font-bold mb-2.5">Quick Links</h3>
+          <ul className="list-none p-0">
+            <li><Link href="/symptoms" className="text-purple-600 no-underline mb-2.5 block">Symptoms</Link></li>
+            <li><Link href="/prevention" className="text-purple-600 no-underline mb-2.5 block">Prevention</Link></li>
+            <li><Link href="/faqs" className="text-purple-600 no-underline mb-2.5 block">FAQs</Link></li>
+            <li><Link href="/about-coronavirus" className="text-purple-600 no-underline mb-2.5 block">About Coronavirus</Link></li>
+            <li><Link href="/contact" className="text-purple-600 no-underline mb-2.5 block">Contact Us</Link></li>
           </ul>
         </div>
 
-        <div style={styles.footerSection}>
-          <h3 style={styles.title}>Helpful Links</h3>
-          <ul style={styles.list}>
-            <li><Link href="/healthcare-professional" style={styles.link}>Healthcare Professional</Link></li>
-            <li><Link href="/lgu-facilities" style={styles.link}>LGU Facilities</Link></li>
-            <li><Link href="/protect-family" style={styles.link}>Protect Your Family</Link></li>
-            <li><Link href="/world-health" style={styles.link}>World Health</Link></li>
+        <div className="flex-1 mr-5">
+          <h3 className="font-bold mb-2.5">Helpful Links</h3>
+          <ul className="list-none p-0">
+            <li><Link href="/healthcare-professional" className="text-purple-600 no-underline mb-2.5 block">Healthcare Professional</Link></li>
+            <li><Link href="/lgu-facilities" className="text-purple-600 no-underline mb-2.5 block">LGU Facilities</Link></li>
+            <li><Link href="/protect-family" className="text-purple-600 no-underline mb-2.5 block">Protect Your Family</Link></li>
+            <li><Link href="/world-health" className="text-purple-600 no-underline mb-2.5 block">World Health</Link></li>
           </ul>
         </div>
 
-        <div style={styles.footerSection}>
-          <h3 style={styles.title}>Resources</h3>
-          <ul style={styles.list}>
-            <li><Link href="https://www.who.int" style={styles.link}>WHO Website</Link></li>
-            <li><Link href="https://www.cdc.gov" style={styles.link}>CDC Website</Link></li>
-            <li><Link href="https://www.gov.com" style={styles.link}>Gov Website</Link></li>
-            <li><Link href="https://www.doh.gov" style={styles.link}>DOH Website</Link></li>
+        <div className="flex-1">
+          <h3 className="font-bold mb-2.5">Resources</h3>
+          <ul className="list-none p-0">
+            <li><Link href="https://www.who.int" className="text-purple-600 no-underline mb-2.5 block">WHO Website</Link></li>
+            <li><Link href="https://www.cdc.gov" className="text-purple-600 no-underline mb-2.5 block">CDC Website</Link></li>
+            <li><Link href="https://www.gov.com" className="text-purple-600 no-underline mb-2.5 block">Gov Website</Link></li>
+            <li><Link href="https://www.doh.gov" className="text-purple-600 no-underline mb-2.5 block">DOH Website</Link></li>
           </ul>
         </div>
       </div>
     </footer>
   );
-};
-
-const styles = {
-  footer: {
-    backgroundColor: '#A8D5B3',
-    padding: '40px 20px',
-    display: 'flex',
-    justifyContent: 'center',
-  },
-  footerContainer: {
-    width: '100%',
-    maxWidth: '1200px',
-    display: 'flex',
-    justifyContent: 'space-between',
-  },
-  footerSection: {
-    flex: 1,
-    marginRight: '20px',
-  },
-  title: {
-    fontWeight: 'bold',
-    marginBottom: '10px',
-  },
-  text: {
-    marginBottom: '20px',
-    color: '#333',
-  },
-  list: {
-    listStyleType: 'none',
-    padding: 0,
-  },
-  link: {
-    color: '#6B47DC',
-    textDecoration: 'none',
-    marginBottom: '10px',
-    display: 'block',
-  },
-  socialIcons: {
-    display: 'flex',
-    marginTop: '10px',
-  },
-  icon: {
-    fontSize: '24px',
-    color: '#555',
-    marginRight: '10px',
-    cursor: 'pointer',
-  },
 };
 
 export default Footer;

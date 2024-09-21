@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="flex justify-between items-center bg-[#9DDAB9] p-2.5 border-b-2 border-[#318baf]">
+    <nav className="flex justify-between items-center bg-gradient-to-r from-green-400 to-blue-200 text-white p-2.5">
       <div className="flex items-center">
         <img src="/assets/logo-no-background.png" alt="logo" className="w-12 h-12 mx-2.5" />
       </div>

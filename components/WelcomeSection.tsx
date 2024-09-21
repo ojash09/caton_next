@@ -2,9 +2,9 @@ import React from 'react';
 
 const WelcomeSection: React.FC = () => {
   return (
-    <div className="flex items-center justify-between bg-[#9DDAB9] p-5 h-[500px]">
+    <div className="flex items-center justify-center bg-gradient-to-r from-green-400 to-blue-200 text-white h-[500px]">
       <div className="flex-1 pr-5">
-        <h1 className="text-4xl font-bold text-black ml-16">Welcome user!</h1>
+        <h1 className="text-6xl font-bold text-white ml-16">Welcome user!</h1>
         <p className="text-lg italic text-gray-700 mb-5 ml-16">
           At Caton, you can book clinic appointments with the best doctors in any location and manage your health records.
         </p>

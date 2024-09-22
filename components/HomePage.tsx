@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
       {/* Cards */}
       <div className="grid grid-cols-2 gap-5">
         {['Kolkata', 'Ahmedabad', 'Banaras', 'Nagpur'].map((city) => (
-          <div key={city} className="bg-[#A9D8E5] p-5 rounded-lg w-72 flex flex-col justify-between">
+          <div key={city} className="bg-[#A9D8E5] p-5 rounded-lg w-[30rem] flex flex-col justify-between">
             <div className="flex items-center mb-3">
               <FaInfoCircle className="text-gray-800 text-2xl mr-2" />
               <h3 className="font-bold text-lg">{city}</h3>

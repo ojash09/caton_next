@@ -9,8 +9,7 @@ const Footer: React.FC = () => {
         <div className="flex-1 mr-5">
           <h3 className="font-bold mb-2.5">About</h3>
           <p className="mb-5 text-gray-800">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
-          </p>
+          At our healthcare platform, we empower patients and hospitals with seamless tools for managing health records, booking appointments, and tracking wellness. Our mission is to simplify healthcare, making it more accessible and efficient for everyone.          </p>
           <div className="flex mt-2.5">
             <FaFacebookF className="text-2xl text-gray-600 mr-2.5 cursor-pointer" />
             <FaTwitter className="text-2xl text-gray-600 mr-2.5 cursor-pointer" />

@@ -21,12 +21,9 @@ const ContactPage: React.FC = () => {
         <div className="bg-white p-8 flex flex-col items-start justify-start shadow-lg">
           <h2 className="text-3xl font-semibold mb-4">Our Location</h2>
           <div className="w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12626.01448123614!2d26.0933287!3d44.4378471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4875b0b7a1%3A0xa9c4d7362e7130d4!2sAmman%20St%2C%20Bucharest!5e0!3m2!1sen!2sro!4v1632400485849!5m2!1sen!2sro"
-              className="w-full h-full border-0"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8849.011191821282!2d79.65151894328459!3d21.1702638232454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2b3f51f74884a9%3A0xfdde1401295524b5!2sGandhi%20Chowk%20Rd%2C%20Bhandara%2C%20Maharashtra%20441904!5e0!3m2!1sen!2sin!4v1727039304042!5m2!1sen!2sin" className="w-full h-full border-0"
               allowFullScreen={true}
-              loading="lazy"
-            ></iframe>
+              loading="lazy"></iframe>
           </div>
         </div>
 
@@ -34,13 +31,13 @@ const ContactPage: React.FC = () => {
         <div className="bg-white p-8 flex flex-col items-start justify-start shadow-lg">
           <h2 className="text-3xl font-semibold mb-4">Meet us</h2>
           <p className="text-lg mb-4">
-            <i className="fas fa-phone-alt"></i> +40728300333
+            <i className="fas fa-phone-alt"></i> +919370647514
           </p>
           <p className="text-lg mb-4">
-            <i className="fas fa-envelope"></i> contact@brandaffair.ro
+            <i className="fas fa-envelope"></i> catonhealthcares@gmail.com
           </p>
           <p className="text-lg mb-4">
-            <i className="fas fa-map-marker-alt"></i> Amman St, no 35, 4th floor, ap 10, Bucharest
+            <i className="fas fa-map-marker-alt"></i> Gandhi chowk, Bhandara, 441905
           </p>
         </div>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaSearch, FaInfoCircle } from 'react-icons/fa';
+import CityCards from './CityCards';
 
 const HomePage: React.FC = () => {
   return (
@@ -24,20 +25,7 @@ const HomePage: React.FC = () => {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-2 gap-5">
-        {['Kolkata', 'Ahmedabad', 'Banaras', 'Nagpur'].map((city) => (
-          <div key={city} className="bg-[#A9D8E5] p-5 rounded-lg w-72 flex flex-col justify-between">
-            <div className="flex items-center mb-3">
-              <FaInfoCircle className="text-gray-800 text-2xl mr-2" />
-              <h3 className="font-bold text-lg">{city}</h3>
-            </div>
-            <p className="text-gray-800 mb-5">
-              Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.
-            </p>
-            <button className="px-5 py-2 bg-gray-200 rounded-lg cursor-pointer">Button</button>
-          </div>
-        ))}
-      </div>
+      <CityCards/>
     </div>
   );
 };

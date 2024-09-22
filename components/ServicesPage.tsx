@@ -28,8 +28,7 @@ const ServicesPage: React.FC = () => {
           </div>
           <h2 className="text-2xl font-semibold mb-4">Online Appointment booking</h2>
           <p className="text-gray-600 mb-6">
-            We analyze the business environment and propose a plan for Salesforce cloud services implementation based on business data and long-time expertise. Our expert team provides professional Salesforce consulting services at an enterprise level.
-          </p>
+          Say goodbye to long queues and waiting times! With our seamless online appointment booking system, patients can easily schedule consultations with the best doctors at their convenience. Stay in control of your health with just a few clicks.          </p>
           <a href="#" className="text-blue-500 hover:underline font-bold">
             Learn More &gt;
           </a>
@@ -46,13 +45,53 @@ const ServicesPage: React.FC = () => {
           </div>
           <h2 className="text-2xl font-semibold mb-4">Managing Health Records</h2>
           <p className="text-gray-600 mb-6">
-            At WaveOC, we pay attention to the process of Salesforce implementation. Our expert team collects requirements, develops, and sets up different Salesforce features and tests the system to ensure the best performance and efficiency.
+          Your health history is always at your fingertips! Our platform enables patients to securely store, access, and share their medical records in one centralized location. Simplifying health management for both patients and healthcare providers.          </p>
+          <a href="#" className="text-blue-500 hover:underline font-bold">
+            Learn More &gt;
+          </a>
+        </div>
+      </div>
+
+      {/* Services Section */}
+      <div className="max-w-6xl mx-auto py-16 px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Service 1: Salesforce Consulting */}
+        <div className="bg-white shadow-lg rounded-lg p-8 flex flex-col items-start">
+          <div className="mb-4">
+            <img
+              src="/assets/undraw_report.svg"
+              alt="Salesforce Consulting Icon"
+              className="w-16 h-16"
+            />
+          </div>
+          <h2 className="text-2xl font-semibold mb-4">Lab Reports</h2>
+          <p className="text-gray-600 mb-6">
+          Access your lab results anytime, anywhere. Our platform ensures that patients receive accurate, up-to-date lab reports directly to their personal dashboard, making it easy to keep track of your medical progress and share results with your healthcare provider.          
+          </p>
+          <a href="#" className="text-blue-500 hover:underline font-bold">
+            Learn More &gt;
+          </a>
+        </div>
+
+        {/* Service 2: Salesforce Implementation */}
+        <div className="bg-white shadow-lg rounded-lg p-8 flex flex-col items-start">
+          <div className="mb-4">
+            <img
+              src="/assets/undraw_fitness.svg"
+              alt="Salesforce Implementation Icon"
+              className="w-16 h-16"
+            />
+          </div>
+          <h2 className="text-2xl font-semibold mb-4">Fitness Tracking</h2>
+          <p className="text-gray-600 mb-6">
+          Track your journey to better health! Our integrated fitness tracker monitors your daily activities, exercise, and overall wellness. Stay motivated with real-time insights and achieve your health goals more efficiently.          
+
           </p>
           <a href="#" className="text-blue-500 hover:underline font-bold">
             Learn More &gt;
           </a>
         </div>
       </div>
+
     </div>
   );
 };

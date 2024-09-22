@@ -10,7 +10,7 @@ const StatisticsSection: React.FC = () => {
           <span className="text-[#1DBF73]">Patients</span> Statistics
         </h2>
         <p className="text-lg text-gray-600">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+          Here is the overview of patients and Healthcare providers connected with us.
         </p>
       </div>
 

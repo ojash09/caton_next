@@ -6,7 +6,7 @@ const WelcomeSection: React.FC = () => {
       <div className="flex-1 pr-5">
         <h1 className="text-6xl font-bold text-white ml-16">Welcome user!</h1>
         <p className="text-lg italic text-gray-700 mb-5 ml-16">
-          At Caton, you can book clinic appointments with the best doctors in any location and manage your health records.
+          At Caton, you can book clinic appointments with the best doctors in any location ,manage your health records, get all your lab reports here and track your fitness with our application.
         </p>
         <button className="bg-[#172dd4] text-white text-lg py-2 px-8 rounded-md cursor-pointer ml-16">
           Let's Explore

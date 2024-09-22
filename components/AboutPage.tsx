@@ -11,8 +11,7 @@ const AboutPage: React.FC = () => {
           <div>
             <h2 className="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
             <p className="text-lg text-gray-600">
-              HubSpot’s company and culture are a lot like our product. They’re crafted, not cobbled, for a delightful experience.
-            </p>
+            We are dedicated to transforming healthcare management by offering a platform that bridges the gap between hospitals and patients. Our services enable hospitals to streamline their operations while empowering patients with easy access to health records, lab reports, and appointments. At the core of our mission is improving the patient experience with innovative, user-friendly solutions.            </p>
           </div>
           <div>
             <img
@@ -34,11 +33,10 @@ const AboutPage: React.FC = () => {
           </div>
           <div>
             <h3 className="text-3xl font-bold text-gray-800 mb-4">
-              Our Mission: Helping Millions of Organizations Grow Better
+              Our Mission: Helping Millions Grow Better
             </h3>
             <p className="text-lg text-gray-600">
-              We believe not just in growing bigger, but in growing better. And growing better means aligning the success of your own business with the success of your customers. Win-win!
-            </p>
+            We aim to revolutionize the healthcare experience by simplifying access to essential services for both hospitals and patients. Our mission is to ensure healthcare is efficient, transparent, and accessible, helping healthcare providers focus on care while patients manage their health effortlessly. Together, we strive for better outcomes and healthier communities through smart digital solutions.            </p>
           </div>
         </div>
         {/* Second Row: Our Mission */}
@@ -46,15 +44,14 @@ const AboutPage: React.FC = () => {
           
           <div>
             <h3 className="text-3xl font-bold text-gray-800 mb-4">
-              Our Mission: Helping Millions of Organizations Grow Better
+              Our Story
             </h3>
             <p className="text-lg text-gray-600">
-              We believe not just in growing bigger, but in growing better. And growing better means aligning the success of your own business with the success of your customers. Win-win!
-            </p>
+            Founded with the vision to make healthcare simpler and more accessible, we recognized the need for a unified platform that caters to both hospitals and patients. What began as a small initiative has grown into a comprehensive solution, offering tools for managing health records, lab reports, and appointments seamlessly. Our journey is driven by a passion for innovation and a commitment to enhancing healthcare experiences for everyone.            </p>
           </div>
           <div>
             <img
-              src="/assets/growth.svg"
+              src="/assets/ourstory.svg"
               alt="Grow Better"
               className="w-full rounded-lg"
             />

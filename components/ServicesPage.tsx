@@ -1,16 +1,17 @@
 import React from 'react';
-
+import Image from 'next/image';
 const ServicesPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-green-400 to-blue-200 text-white h-96 flex justify-center items-center">
+      <div className="relative bg-gradient-to-r from-[#003C43] to-[#77B0AA] text-white h-96 flex justify-center items-center">
         <h1 className="text-6xl font-bold absolute top-20 " >
           Services
         </h1>
-        <img
+        <Image
           src="/assets/undraw_server_down_s-4-lk.svg"
           alt="Flamingo"
+          width="64"
           className="absolute bottom-2 w-64"
         />
       </div>
@@ -20,9 +21,10 @@ const ServicesPage: React.FC = () => {
         {/* Service 1: Salesforce Consulting */}
         <div className="bg-white shadow-lg rounded-lg p-8 flex flex-col items-start">
           <div className="mb-4">
-            <img
+            <Image
               src="/assets/undraw_connection.svg"
               alt="Salesforce Consulting Icon"
+              width="64"
               className="w-16 h-16"
             />
           </div>
@@ -37,9 +39,10 @@ const ServicesPage: React.FC = () => {
         {/* Service 2: Salesforce Implementation */}
         <div className="bg-white shadow-lg rounded-lg p-8 flex flex-col items-start">
           <div className="mb-4">
-            <img
+            <Image
               src="/assets/undraw_organizer.svg"
               alt="Salesforce Implementation Icon"
+              width="64"
               className="w-16 h-16"
             />
           </div>
@@ -57,9 +60,11 @@ const ServicesPage: React.FC = () => {
         {/* Service 1: Salesforce Consulting */}
         <div className="bg-white shadow-lg rounded-lg p-8 flex flex-col items-start">
           <div className="mb-4">
-            <img
+            <Image
               src="/assets/undraw_report.svg"
               alt="Salesforce Consulting Icon"
+              width="64"
+              height={64}
               className="w-16 h-16"
             />
           </div>
@@ -75,9 +80,11 @@ const ServicesPage: React.FC = () => {
         {/* Service 2: Salesforce Implementation */}
         <div className="bg-white shadow-lg rounded-lg p-8 flex flex-col items-start">
           <div className="mb-4">
-            <img
+            <Image
               src="/assets/undraw_fitness.svg"
               alt="Salesforce Implementation Icon"
+              width="64"
+              height={64}
               className="w-16 h-16"
             />
           </div>

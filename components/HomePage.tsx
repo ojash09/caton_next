@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaSearch, FaInfoCircle } from 'react-icons/fa';
 import CityCards from './CityCards';
+import WhyUs from './WhyUs';
+import FeaturesSection from './FeaturesSection';
 
 const HomePage: React.FC = () => {
   return (
@@ -14,6 +16,8 @@ const HomePage: React.FC = () => {
       {/* Divider */}
       <div className="w-full h-0.5 bg-black my-8"></div>
 
+      <WhyUs/>
+      <FeaturesSection/>
       {/* Search Bar */}
       <div className="flex items-center justify-center mb-10">
         <input 

@@ -12,6 +12,7 @@ const ServicesPage: React.FC = () => {
           src="/assets/undraw_server_down_s-4-lk.svg"
           alt="Flamingo"
           width="64"
+          height={64}
           className="absolute bottom-2 w-64"
         />
       </div>
@@ -25,6 +26,7 @@ const ServicesPage: React.FC = () => {
               src="/assets/undraw_connection.svg"
               alt="Salesforce Consulting Icon"
               width="64"
+              height={64}
               className="w-16 h-16"
             />
           </div>
@@ -43,6 +45,7 @@ const ServicesPage: React.FC = () => {
               src="/assets/undraw_organizer.svg"
               alt="Salesforce Implementation Icon"
               width="64"
+              height={64}
               className="w-16 h-16"
             />
           </div>

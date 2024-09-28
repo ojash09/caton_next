@@ -1,11 +1,11 @@
 import React from 'react';
-
+import Image from 'next/image';
 const TeamPage: React.FC = () => {
   const teamMembers = [
     {
       name: 'Edward Gilmore',
       role: 'Founder and CEO',
-      img: '/assets/undraw_pic_profile_re_7g2h.svg',
+      Image: '/assets/undraw_pic_profile_re_7g2h.svg',
       social: {
         facebook: '#',
         instagram: '#',
@@ -15,7 +15,7 @@ const TeamPage: React.FC = () => {
     {
       name: 'Lucy Kims',
       role: 'Member Experience Manager',
-      img: '/assets/undraw_pic_profile_re_7g2h.svg',
+      Image: '/assets/undraw_pic_profile_re_7g2h.svg',
       social: {
         facebook: '#',
         instagram: '#',
@@ -25,7 +25,7 @@ const TeamPage: React.FC = () => {
     {
       name: 'Dan Wilson',
       role: 'Senior Community Manager',
-      img: '/assets/undraw_pic_profile_re_7g2h.svg',
+      Image: '/assets/undraw_pic_profile_re_7g2h.svg',
       social: {
         facebook: '#',
         instagram: '#',
@@ -52,9 +52,11 @@ const TeamPage: React.FC = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8 py-12">
         {teamMembers.map((member, index) => (
           <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
-            <img
-              src={member.img}
+            <Image
+              src={member.Image}
               alt={member.name}
+              width={40}
+              height={64}
               className="w-40 h-40 rounded-full mx-auto mb-6 object-cover"
             />
             <h3 className="text-xl font-semibold text-gray-800">{member.name}</h3>

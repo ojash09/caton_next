@@ -26,8 +26,8 @@ const WhyUs = () => {
         </div>
 
         {/* List on the Right */}
-        <div className="lg:w-2/5 lg:ml-10 mt-10 lg:mt-0 ">
-          <ul className="text-gray-600 space-y-6">
+        <div className="lg:w-2/5 lg:ml-10 mt-10 lg:mt-20  ">
+          <ul className="text-gray-600 space-y-6 ">
             <li className="border-b border-gray-300 pb-4 mb-4">
               <h2 className="font-medium text-2xl text-blue-800">Streamlined operations</h2>
               <p className="text-gray-600">Fully integrated clinical, support, finance and billing, supply chain, and administrative functions for more efficient operations.</p>

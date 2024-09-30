@@ -12,7 +12,7 @@ const Page: React.FC = () => {
       <Navbar />
       <WelcomeSection />
       <HomePage />
-      <StatisticsSection />
+      {/* <StatisticsSection /> */}
       <Footer />
       
     </div>

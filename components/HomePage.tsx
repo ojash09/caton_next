@@ -19,17 +19,17 @@ const HomePage: React.FC = () => {
       <WhyUs/>
       <FeaturesSection/>
       {/* Search Bar */}
-      <div className="flex items-center justify-center mb-10">
+      {/* <div className="flex items-center justify-center mb-10">
         <input 
           type="text" 
           placeholder="Search by your city" 
           className="px-5 py-2 rounded-lg border border-gray-300 w-72 text-lg" 
         />
         <FaSearch className="ml-[-30px] text-gray-600 cursor-pointer" />
-      </div>
+      </div> */}
 
       {/* Cards */}
-      <CityCards/>
+      {/* <CityCards/> */}
     </div>
   );
 };

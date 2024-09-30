@@ -63,7 +63,7 @@ const FeaturesSection = () => {
 
         {/* Left Column: Text Section */}
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:mt-32 text-center lg:text-left">
-          <h2 className="text-4xl font-bold mb-4">Caton Hospital Software Modules</h2>
+          <h2 className="text-4xl font-medium mb-4">Caton Hospital Software Modules</h2>
           <p className="text-gray-700 mb-6 text-2xl">
             Our hospital management software provides extensive coverage for all departments and functions. From clinical to administrative modules, Caton is your one-stop solution for efficient hospital operations.
           </p>
